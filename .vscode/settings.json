@@ -1,0 +1,11 @@
+{
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.formatOnSave": true,
+  "diffEditor.wordWrap": "inherit",
+  "editor.minimap.enabled": true,
+  "cSpell.words": [
+    "Pokedex"
+  ]
+}
