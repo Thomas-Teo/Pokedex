@@ -1,6 +1,12 @@
 {
     "recommendations": [
         "esbenp.prettier-vscode",
-        "ritwickdey.LiveServer"
+        "ritwickdey.LiveServer",
+        "dracula-theme.theme-dracula",
+        "formulahendry.auto-rename-tag",
+        "BracketPairColorDLW.bracket-pair-color-dlw",
+        "streetsidesoftware.code-spell-checker",
+        "PKief.material-icon-theme"
+
     ]
 }

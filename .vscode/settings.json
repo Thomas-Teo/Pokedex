@@ -5,6 +5,7 @@
   "editor.formatOnSave": true,
   "diffEditor.wordWrap": "inherit",
   "editor.minimap.enabled": true,
+  "editor.wordWrap": "on",
   "cSpell.words": [
     "Pokedex"
   ]
