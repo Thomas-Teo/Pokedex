@@ -3,7 +3,9 @@ const pokemonNumber = document.querySelector('.pokemon__number');
 const pokemonImage = document.querySelector('.pokemon__image');
 
 const fetchPokemon = async (pokemon) => {
-  const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+  const APIResponse = await fetch(
+    `https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`);
+
   const data = await APIResponse.json();
 
   return data;
