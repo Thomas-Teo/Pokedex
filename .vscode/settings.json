@@ -8,5 +8,6 @@
   "editor.wordWrap": "on",
   "cSpell.words": [
     "Pokedex"
-  ]
+  ],
+  "liveServer.settings.multiRootWorkspaceName": "Pokedex"
 }

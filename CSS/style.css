@@ -27,9 +27,16 @@ body {
 
 .pokemon__image {
   position: absolute;
+  top: 30%;
+  left: 65%;
+  height: 55%;
+}
+
+.pokemon__background {
+  position: absolute;
   top: 16%;
   left: 50%;
-  height: 20%;
+  height: 80%;
 }
 
 .pokemon__data {
@@ -46,7 +53,7 @@ body {
   text-transform: capitalize;
 }
 
-.pokemon__status {
+.pokemon__status_element {
   position: absolute;
   font-weight: 600;
   color: #000;
@@ -56,17 +63,39 @@ body {
   font-size: var(--font--size);
 }
 
+.pokemon__status {
+  position: absolute;
+  font-weight: 600;
+  color: #000;
+  right: 26%;
+  font-size: var(--font--size);
+}
+
+.pokemon__abilities {
+  position: absolute;
+  font-weight: 600;
+  color: #000;
+  top: 26%;
+  font-size: var(--font--size);
+}
+
 .pokemon__height {
   text-transform: capitalize;
 }
 
-.pokemon__type {
+.pokemon__type .pokemon__type_two {
   text-transform: capitalize;
 }
 
 .pokemon__type_icon {
   position: absolute;
   height: auto;
+}
+
+.pokemon__type_icon_two {
+  position: absolute;
+  height: auto;
+  top: 200px;
 }
 
 .form {
@@ -112,5 +141,4 @@ body {
   height: 20rem;
   width: 20rem;
   top: 16%;
-  background-color: red;
 }
