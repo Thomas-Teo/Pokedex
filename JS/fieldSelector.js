@@ -23,3 +23,8 @@ export const pokemonAbilityOne = document.querySelector('.pokemon__ability_one')
 export const pokemonAbilityTwo = document.querySelector('.pokemon__ability_two');
 export const pokemonAbilityThree = document.querySelector('.pokemon__ability_three');
 export const pokemonAbilityFour = document.querySelector('.pokemon__ability_four');
+
+export const pokemonMoveOne = document.querySelector('.pokemon__move_one');
+export const pokemonMoveTwo = document.querySelector('.pokemon__move_two');
+export const pokemonMoveThree = document.querySelector('.pokemon__move_three');
+export const pokemonMoveFour = document.querySelector('.pokemon__move_four');

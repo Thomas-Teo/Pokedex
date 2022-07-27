@@ -78,6 +78,13 @@ body {
   top: 26%;
   font-size: var(--font--size);
 }
+.pokemon__moves {
+  position: absolute;
+  font-weight: 600;
+  color: #000;
+  top: 50%;
+  font-size: var(--font--size);
+}
 
 .pokemon__height {
   text-transform: capitalize;
