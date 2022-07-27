@@ -32,17 +32,24 @@ const renderPokemon = async (pokemonSearch) => {
     pokemonNumber.innerHTML = data.id;
     pokemonHeight.innerHTML = data.height;
     pokemonType.innerHTML = data['types']['0']['type']['name'];
+    renderIcon(pokemonType.innerHTML);
     pokemonImage.src =
       data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+    pokemonTypeIcon.src = `icons/${pokemonType}.png`;
     input.value = '';
     searchPokemon = data.id;
-    pokemonTypeIcon.scr = `icons/icons-${pokemonType.value.toLowerCase()}.png`;
   } else {
     pokemonName.innerHTML = 'No results';
     pokemonNumber.innerHTML = '000';
     pokemonImage.src = './images/semPokemon.png';
     input.value = '';
   }
+};
+
+const renderIcon = async (data) => {
+  const element = await data;
+
+  pokemonTypeIcon.src = `icons/${element}.png`;
 };
 
 form.addEventListener('submit', (event) => {
