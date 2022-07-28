@@ -17,6 +17,11 @@ import { pokemonAbilityTwo } from './fieldSelector.js';
 import { pokemonAbilityThree } from './fieldSelector.js';
 import { pokemonAbilityFour } from './fieldSelector.js';
 
+import { pokemonMoveOne } from './fieldSelector.js';
+import { pokemonMoveTwo } from './fieldSelector.js';
+import { pokemonMoveThree } from './fieldSelector.js';
+import { pokemonMoveFour } from './fieldSelector.js';
+
 import { form } from './fieldSelector.js';
 import { input } from './fieldSelector.js';
 import { buttonNext } from './fieldSelector.js';
@@ -25,7 +30,6 @@ import { buttonPrev } from './fieldSelector.js';
 import { renderIcon } from './renderIcon.js';
 import { renderBackground } from './renderBackground.js';
 import { nonePokemon } from './nonePokemon.js';
-import { randomNumbers } from './randomNumbers.js';
 
 let searchPokemon = 1;
 
@@ -77,10 +81,16 @@ const renderPokemon = async (pokemonSearch) => {
     if (abilities > 3) {
       pokemonAbilityFour.innerHTML = data['abilities']['3']['ability']['name'];
     }
-
     let moves = data.moves.length;
-    /*randomNumbers(moves);*/
-    console.log(randomNumbers(moves));
+    const random_numbers_0 = Math.floor(0 + Math.random() * moves);
+    const random_numbers_1 = Math.floor(0 + Math.random() * moves);
+    const random_numbers_2 = Math.floor(0 + Math.random() * moves);
+    const random_numbers_3 = Math.floor(0 + Math.random() * moves);
+
+    pokemonMoveOne.innerHTML = data['moves'][random_numbers_0]['move']['name'];
+    pokemonMoveTwo.innerHTML = data['moves'][random_numbers_1]['move']['name'];
+    pokemonMoveThree.innerHTML = data['moves'][random_numbers_2]['move']['name'];
+    pokemonMoveFour.innerHTML = data['moves'][random_numbers_3]['move']['name'];
 
     renderBackground(pokemonType.innerHTML);
     renderIcon(pokemonType.innerHTML, pokemonTypeTwo.innerHTML);
