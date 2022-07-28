@@ -2,72 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="icons/faviconPokeball16x16.png" />
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <script defer type="module" src="./JS/main.js"></script>
     <title>Pokedex</title>
+    <link rel="icon" href="icons/pokebola.png" />
+    <link rel="stylesheet" href="./CSS/page.css" />
+    <link rel="stylesheet" href="./CSS/button.css" />
+    <link rel="stylesheet" href="./CSS/fields.css" />
+    <link rel="stylesheet" href="./CSS/pokedex.css" />
+    <link rel="stylesheet" href="./CSS/screen.css" />
+    <script defer type="module" src="./JS/main.js"></script>
   </head>
   <body>
     <main>
-      <div class="pokedex"></div>
-      <img src="" alt="" class="pokemon__background" />
-      <img src="" alt="" class="pokemon__image" />
+      <div class="pokedex_upside">
 
-      <h3 class="pokemon__data">
-        <span class="pokemon__number"></span> -
-        <span class="pokemon__name"></span>
-      </h3>
+        <div class="border_screen">
+          <span></span>
+          
+          <div class="poke__name">
+            <h3 class="pokemon__data">
+              <span class="pokemon__number"></span> -
+              <span class="pokemon__name"></span>
+            </h3>
+          </div>  
+          
+          <div class="icon">
+            <img src="" alt="" class="pokemon__type_icon" />
+            <img src="" alt="" class="pokemon__type_icon_two" />
+          </div>
+          
+          <div class="screen">
 
-      <h3 class="pokemon__status_element">
-        <span class="pokemon__stype-text">Type: </span>
-        <span class="pokemon__type"></span>
-        <span class="pokemon__type_two"></span>
+            <img src="" alt="" class="pokemon__background" />
+            
+            <img src="" alt="" class="pokemon__image" />
 
-        <img src="" alt="" class="pokemon__type_icon" />
-        <img src="" alt="" class="pokemon__type_icon_two" />
-      </h3>
+          </div>
 
-      <h3 class="pokemon__status">
-        <span class="pokemon__hp_text">Hp: </span>
-        <span class="pokemon__hp"></span>
+        </div>
 
-        <span class="pokemon__attack_text">Attack: </span>
-        <span class="pokemon__attack"></span>
+      </div>
+    </div>
+    <div class="pokedex_bottom">
+      <div class="text">
+  
+        <h3 class="pokemon__status_element">
+          <span class="pokemon__stype-text">Type: </span>
+          <span class="pokemon__type"></span>
+          <span class="pokemon__type_two"></span>
+        </h3>
+  
+        <h3 class="pokemon__status">
+          <span class="pokemon__hp_text">Hp: </span>
+          <span class="pokemon__hp"></span>
+  
+          <span class="pokemon__attack_text">Attack: </span>
+          <span class="pokemon__attack"></span>
+  
+          <span class="pokemon__defense_text">Defense: </span>
+          <span class="pokemon__defense"></span>
+  
+          <span class="pokemon__speed_text">Speed: </span>
+          <span class="pokemon__speed"></span>
+  
+          <span class="pokemon__height_text">Height: </span>
+          <span class="pokemon__height"></span>
+        </h3>
+  
+        <h3 class="pokemon__abilities">
+          <span class="pokemon__ability_text">Ability: </span>
+          <span class="pokemon__ability_one"></span>
+          <span class="pokemon__ability_two"></span>
+          <span class="pokemon__ability_three"></span>
+          <span class="pokemon__ability_four"></span>
+        </h3>
+  
+        <h3 class="pokemon__moves">
+          <span class="pokemon__move_text">Moves: </span>
+          <span class="pokemon__move_one"></span>
+          <span class="pokemon__move_two"></span>
+          <span class="pokemon__move_three"></span>
+          <span class="pokemon__move_four"></span>
+        </h3>
+      <div class="element">
+        <form class="form">
+            <input type="search" class="input__search" placeholder="Name or Number" required />
+          </form>
 
-        <span class="pokemon__defense_text">Defense: </span>
-        <span class="pokemon__defense"></span>
-
-        <span class="pokemon__speed_text">Speed: </span>
-        <span class="pokemon__speed"></span>
-
-        <span class="pokemon__height_text">Height: </span>
-        <span class="pokemon__height"></span>
-      </h3>
-
-      <h3 class="pokemon__abilities">
-        <span class="pokemon__ability_text">Ability: </span>
-        <span class="pokemon__ability_one"></span>
-        <span class="pokemon__ability_two"></span>
-        <span class="pokemon__ability_three"></span>
-        <span class="pokemon__ability_four"></span>
-      </h3>
-
-      <h3 class="pokemon__moves">
-        <span class="pokemon__move_text">Moves: </span>
-        <span class="pokemon__move_one"></span>
-        <span class="pokemon__move_two"></span>
-        <span class="pokemon__move_three"></span>
-        <span class="pokemon__move_four"></span>
-      </h3>
-
-      <form class="form">
-        <input type="search" class="input__search" placeholder="Name or Number" required />
-      </form>
-
-      <div class="buttons">
-        <button class="button btn-prev">&lt;</button>
-        <button class="button btn-next">&gt;</button>
+          <div class="buttons">
+            <button class="button btn-prev">&lt;</button>
+            <button class="button btn-next">&gt;</button>
+          </div>
+        </div>
       </div>
     </main>
   </body>

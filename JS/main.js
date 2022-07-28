@@ -82,10 +82,11 @@ const renderPokemon = async (pokemonSearch) => {
       pokemonAbilityFour.innerHTML = data['abilities']['3']['ability']['name'];
     }
     let moves = data.moves.length;
-    const random_numbers_0 = Math.floor(0 + Math.random() * moves);
-    const random_numbers_1 = Math.floor(0 + Math.random() * moves);
-    const random_numbers_2 = Math.floor(0 + Math.random() * moves);
-    const random_numbers_3 = Math.floor(0 + Math.random() * moves);
+
+    const random_numbers_0 = Math.floor(0 + Math.random() * (moves * 0.25));
+    const random_numbers_1 = Math.floor(moves * 0.25 + Math.random() * (moves * 0.25));
+    const random_numbers_2 = Math.floor(moves * 0.5 + Math.random() * (moves * 0.25));
+    const random_numbers_3 = Math.floor(moves * 0.75 + Math.random() * moves * 0.25);
 
     pokemonMoveOne.innerHTML = data['moves'][random_numbers_0]['move']['name'];
     pokemonMoveTwo.innerHTML = data['moves'][random_numbers_1]['move']['name'];

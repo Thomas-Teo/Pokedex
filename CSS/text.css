@@ -1,0 +1,37 @@
+.text {
+  display: flex;
+}
+
+.pokemon__status_element {
+  font-weight: 600;
+  color: #000;
+  top: 80%;
+  left: 46%;
+  right: 26%;
+  font-size: var(--font--size);
+}
+
+.pokemon__status {
+  font-weight: 600;
+  color: #000;
+  right: 26%;
+  font-size: var(--font--size);
+}
+
+.pokemon__abilities {
+  font-weight: 600;
+  color: #000;
+  top: 26%;
+  font-size: var(--font--size);
+}
+
+.pokemon__moves {
+  font-weight: 600;
+  color: #000;
+  top: 50%;
+  font-size: var(--font--size);
+}
+
+.pokemon__height .pokemon__type .pokemon__type_two .pokemon__name {
+  text-transform: capitalize;
+}

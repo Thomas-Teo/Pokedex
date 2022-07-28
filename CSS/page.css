@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+
+  /* COLORS */
+  --background-page: linear-gradient(to bottom, #6ab7f5, #fff);
+  --pokedex: #c91842;
+  --pokedex_dowm: #970e2e;
+}
+
+main {
+  margin-left: 15px;
+  padding: 15px;
+  margin-top: 5%;
+}
+
+body {
+  background: var(--background-page);
+  min-height: 100vh;
+}
