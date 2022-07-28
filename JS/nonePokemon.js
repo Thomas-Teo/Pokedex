@@ -37,7 +37,7 @@ export function nonePokemon() {
     (pokemonNumber.innerHTML = '000'),
     (pokemonImage.src = './images/semPokemon.png'),
     (pokemonBackground.src = `./backgrounds/normal_bg.png`),
-    (pokemonTypeIconTwo.src = ''),
     (pokemonTypeIcon.src = `./icons/sem_icon.png`),
+    (pokemonTypeIconTwo.src = ''),
     (input.value = '');
 }

@@ -5,6 +5,7 @@ import { pokemonImage } from './fieldSelector.js';
 
 import { pokemonType } from './fieldSelector.js';
 import { pokemonTypeTwo } from './fieldSelector.js';
+import { pokemonTypeIconTwo } from './fieldSelector.js';
 
 import { pokemonHp } from './fieldSelector.js';
 import { pokemonAttack } from './fieldSelector.js';
@@ -44,9 +45,12 @@ const fetchPokemon = async (pokemon) => {
 
 const renderPokemon = async (pokemonSearch) => {
   pokemonName.innerHTML = 'Loading...';
+  pokemonTypeIconTwo.src = '';
+
   nonePokemon();
 
   const data = await fetchPokemon(pokemonSearch);
+  pokemonTypeIconTwo.src = '';
 
   if (data) {
     pokemonNumber.innerHTML = data.id;
@@ -66,6 +70,8 @@ const renderPokemon = async (pokemonSearch) => {
     }
     if (types > 1) {
       pokemonTypeTwo.innerHTML = data['types']['1']['type']['name'];
+    } else {
+      pokemonTypeTwo.innerHTML = '';
     }
 
     let abilities = data.abilities.length;

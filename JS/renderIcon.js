@@ -10,7 +10,8 @@ export async function renderIcon(data, data_two) {
     const element_two = await data_two;
 
     pokemonTypeIconTwo.src = `./icons/${element_two}.png`;
+    pokemonTypeIconTwo.style.display = '';
   } else {
-    pokemonTypeIconTwo.src = '';
+    pokemonTypeIconTwo.style.display = 'none';
   }
 }
