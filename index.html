@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./CSS/fields.css" />
     <link rel="stylesheet" href="./CSS/pokedex.css" />
     <link rel="stylesheet" href="./CSS/screen.css" />
+    <link rel="stylesheet" href="./CSS/text.css" />
     <script defer type="module" src="./JS/main.js"></script>
   </head>
   <body>
@@ -37,15 +38,19 @@
         </div>
       </div>
 
-      <div class="pokedex_fit"></div>
-      <div class="pokedex_fit_circle"></div>
+      <div class="fit">
+        <div class="pokedex_fit"></div>
+        <div class="pokedex_fit_circle"></div>
+      </div>
 
       <div class="pokedex_bottom">
         <div class="pokemon_screen_bottom">
           <div class="pokemon__status_element">
-            <span class="text pokemon__type_text">Type: </span><br />
-            <span class="pokemon__type"></span><br />
-            <span class="pokemon__type_two"></span>
+            <div class="text pokemon__type_text">Type:</div>
+            <br />
+            <div class="pokemon__type"></div>
+            <br />
+            <div class="pokemon__type_two"></div>
           </div>
 
           <div class="pokemon__status">
@@ -95,9 +100,11 @@
             <input type="search" class="input__search" placeholder="Name or Number" required />
           </form>
         </div>
-        <div class="buttons">
-          <button class="button btn-prev">&lt;</button>
-          <button class="button btn-next">&gt;</button>
+        <div class="button_prev">
+          <button class="btn-prev">&lt;</button>
+        </div>
+        <div class="button_next">
+          <button class="btn-next">&gt;</button>
         </div>
       </div>
     </main>

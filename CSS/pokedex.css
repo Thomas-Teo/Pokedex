@@ -8,48 +8,58 @@
 
   border-radius: 20px;
   background-color: var(--pokedex);
-  box-shadow: 0 0 0 2px #000, 0 0 0 4px #c5c5c5, 0 0 0 6px #000, -9px 0 0 5px var(--pokedex_dowm),
+  box-shadow: 0 0 0 2px #000, 0 0 0 4px #c5c5c5, 0 0 0 6px #000, -9px 0 0 5px var(--pokedex_down),
     -11px 0 0 9px #000;
 }
 
-/*.pokedex_fit {
-  position: relative;
+.fit {
+  position: absolute;
+  top: calc(100% - 50px);
+  display: flex;
+
+  top: 27rem;
+}
+
+.pokedex_fit {
   height: 3rem;
   width: 25rem;
-  top: 45%;
-  left: 20%;
 
-  border-radius: 20px;
-  background-image: linear-gradient(to top, var(--pokedex_dowm), var(--pokedex));
+  border-radius: 6px 18px 18px 6px;
+  background-image: linear-gradient(
+    to top,
+    var(--pokedex_down),
+    var(--pokedex),
+    var(--pokedex_down)
+  );
   border: 2px solid #000;
+  box-shadow: inset 2px -1px 6px;
 }
 
 .pokedex_fit_circle {
-  position: relative;
+  position: absolute;
   height: 3rem;
-  width: 1.7rem;
-  top: 45%;
-  left: 20%;
+  width: 0.9rem;
 
+  box-shadow: inset 1px 1px 2px;
   border: 2px solid #000;
-  border-radius: 100%;
-  background-image: linear-gradient(to top, var(--pokedex_dowm), var(--pokedex));
-  background-image: linear-gradient(to right, var(--pokedex_dowm), var(--pokedex));
-}*/
+  border-radius: 12px 100% 100% 12px;
+  background-image: linear-gradient(to top, var(--pokedex_down), var(--pokedex));
+  background-image: linear-gradient(to right, var(--pokedex_down), var(--pokedex));
+}
 
 .pokedex_bottom {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 2fr 1fr 0.3fr;
+  grid-template-rows: 5fr 1fr;
+
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 1rem;
-
   height: 25rem;
   width: 40rem;
-  top: 16%;
   border-radius: 20px;
+  margin-top: 15px;
 
   background-color: var(--pokedex);
-  box-shadow: 0 0 0 2px #000, 0 0 0 4px #c5c5c5, 0 0 0 6px #000, -9px 0 0 5px var(--pokedex_dowm),
+  box-shadow: 0 0 0 2px #000, 0 0 0 4px #c5c5c5, 0 0 0 6px #000, -9px 0 0 5px var(--pokedex_down),
     -11px 0 0 9px #000;
 }

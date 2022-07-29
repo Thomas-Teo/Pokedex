@@ -1,17 +1,3 @@
-.pokemon__status_element {
-}
-
-.pokemon__status {
-  justify-content: center;
-  align-items: center;
-}
-
-.pokemon__abilities {
-  justify-content: center;
-  align-items: center;
-}
-
-.pokemon__moves {
-  justify-content: center;
-  align-items: center;
+.pokemon__type_text {
+  grid-row: 1/2;
 }
