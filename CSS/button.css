@@ -1,17 +1,8 @@
 .button_prev {
-  grid-row: 2/3;
-  grid-column: 2/3;
-  align-self: center;
-  justify-self: center;
-  width: 15%;
-  height: 5%;
+  border-radius: 8px;
 }
 
 .button_next {
-  grid-row: 2/3;
-  grid-column: 4/5;
-  align-self: center;
-  justify-self: center;
   width: 15%;
   height: 5%;
   border-radius: 50px;
@@ -23,12 +14,5 @@
 
 .btn-prev {
   border-radius: 8px;
-  width: 50px;
-  height: 30px;
   text-align: center;
-}
-
-.btn-prev:hover {
-  border-radius: 8px;
-  text-decoration: none;
 }

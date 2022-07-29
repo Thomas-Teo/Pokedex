@@ -4,107 +4,113 @@
     <meta charset="UTF-8" />
     <title>Pokedex</title>
     <link rel="icon" href="icons/pokebola.png" />
+
     <link rel="stylesheet" href="./CSS/page.css" />
+
+    <link rel="stylesheet" href="./CSS/pokedex.css" />
+    <link rel="stylesheet" href="./CSS/screenUpside.css" />
+    <link rel="stylesheet" href="./CSS/screenBottom.css" />
+
     <link rel="stylesheet" href="./CSS/button.css" />
     <link rel="stylesheet" href="./CSS/fields.css" />
-    <link rel="stylesheet" href="./CSS/pokedex.css" />
-    <link rel="stylesheet" href="./CSS/screen.css" />
-    <link rel="stylesheet" href="./CSS/text.css" />
+
     <script defer type="module" src="./JS/main.js"></script>
   </head>
+
   <body>
     <main>
-      <div class="pokedex_upside">
-        <div class="border_screen_upside">
-          <span></span>
-
-          <div class="poke__name">
-            <div class="pokemon__data">
-              <span class="pokemon__number"></span> -
-              <span class="pokemon__name"></span>
-            </div>
+      <div class="pokedex__upside">
+        <div class="border__screen_upside">
+          <div class="pokemon__info">
+            <span class="pokemon__number"></span> -
+            <span class="pokemon__name"></span>
           </div>
 
-          <div class="icon">
+          <div class="pokemon__icon">
             <img src="" alt="" class="pokemon__type_icon" />
             <img src="" alt="" class="pokemon__type_icon_two" />
           </div>
 
-          <div class="screen_upside">
-            <img src="" alt="" class="pokemon__background" />
-
+          <div class="screen__upside">
+            <div class="screen__background">
+              <img src="" alt="" class="pokemon__background" />
+            </div>
             <img src="" alt="" class="pokemon__image" />
           </div>
         </div>
       </div>
 
       <div class="fit">
-        <div class="pokedex_fit"></div>
-        <div class="pokedex_fit_circle"></div>
+        <div class="pokedex__fit"></div>
+        <div class="pokedex__fit_circle"></div>
       </div>
 
       <div class="pokedex_bottom">
-        <div class="pokemon_screen_bottom">
-          <div class="pokemon__status_element">
-            <div class="text pokemon__type_text">Type:</div>
-            <br />
-            <div class="pokemon__type"></div>
-            <br />
-            <div class="pokemon__type_two"></div>
-          </div>
+        <div class="border_pokedex_bottom">
+          <div class="pokemon_screen_bottom">
+            <div class="pokemon__status_element">
+              <div class="text pokemon__type_text">Type:</div>
+              <br />
+              <div class="pokemon__type"></div>
+              <br />
+              <div class="pokemon__type_two"></div>
+            </div>
 
-          <div class="pokemon__status">
-            <span class="text pokemon__status_text">Status: </span><br />
-            <span class="pokemon__hp_text">Hp: </span>
-            <span class="pokemon__hp"></span>
-            <br />
-            <span class="pokemon__attack_text">Attack: </span>
-            <span class="pokemon__attack"></span>
-            <br />
-            <span class="pokemon__defense_text">Defense: </span>
-            <span class="pokemon__defense"></span>
-            <br />
-            <span class="pokemon__speed_text">Speed: </span>
-            <span class="pokemon__speed"></span>
-            <br />
-            <span class="pokemon__height_text">Height: </span>
-            <span class="pokemon__height"></span>
-          </div>
+            <div class="pokemon__status">
+              <span class="text pokemon__status_text">Status: </span><br />
+              <span class="pokemon__hp_text">Hp: </span>
+              <span class="pokemon__hp"></span>
+              <br />
+              <span class="pokemon__attack_text">Attack: </span>
+              <span class="pokemon__attack"></span>
+              <br />
+              <span class="pokemon__defense_text">Defense: </span>
+              <span class="pokemon__defense"></span>
+              <br />
+              <span class="pokemon__speed_text">Speed: </span>
+              <span class="pokemon__speed"></span>
+              <br />
+              <span class="pokemon__height_text">Height: </span>
+              <span class="pokemon__height"></span>
+            </div>
 
-          <div class="pokemon__abilities">
-            <span class="pokemon__ability_text">Ability: </span>
-            <br />
-            <span class="pokemon__ability_one"></span>
-            <br />
-            <span class="pokemon__ability_two"></span>
-            <br />
-            <span class="pokemon__ability_three"></span>
-            <br />
-            <span class="pokemon__ability_four"></span>
-          </div>
+            <div class="pokemon__abilities">
+              <span class="pokemon__ability_text">Ability: </span>
+              <br />
+              <span class="pokemon__ability_one"></span>
+              <br />
+              <span class="pokemon__ability_two"></span>
+              <br />
+              <span class="pokemon__ability_three"></span>
+              <br />
+              <span class="pokemon__ability_four"></span>
+            </div>
 
-          <div class="pokemon__moves">
-            <span class="pokemon__move_text">Moves: </span>
-            <br />
-            <span class="pokemon__move_one"></span>
-            <br />
-            <span class="pokemon__move_two"></span>
-            <br />
-            <span class="pokemon__move_three"></span>
-            <br />
-            <span class="pokemon__move_four"></span>
+            <div class="pokemon__moves">
+              <span class="pokemon__move_text">Moves: </span>
+              <br />
+              <span class="pokemon__move_one"></span>
+              <br />
+              <span class="pokemon__move_two"></span>
+              <br />
+              <span class="pokemon__move_three"></span>
+              <br />
+              <span class="pokemon__move_four"></span>
+            </div>
           </div>
-        </div>
-        <div class="element">
-          <form class="form">
-            <input type="search" class="input__search" placeholder="Name or Number" required />
-          </form>
-        </div>
-        <div class="button_prev">
-          <button class="btn-prev">&lt;</button>
-        </div>
-        <div class="button_next">
-          <button class="btn-next">&gt;</button>
+          <div class="btn_input">
+            <div class="element">
+              <form class="form">
+                <input type="search" class="input__search" placeholder="Name or Number" required />
+              </form>
+            </div>
+            <div class="button_prev">
+              <button class="btn-prev">&lt;</button>
+            </div>
+            <div class="button_next">
+              <button class="btn-next">&gt;</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>

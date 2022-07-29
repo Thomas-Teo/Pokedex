@@ -58,12 +58,6 @@ const renderPokemon = async (pokemonSearch) => {
     pokemonImage.src =
       data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
 
-    pokemonHp.innerHTML = data['stats']['0']['base_stat'];
-    pokemonAttack.innerHTML = data['stats']['1']['base_stat'];
-    pokemonDefense.innerHTML = data['stats']['2']['base_stat'];
-    pokemonSpeed.innerHTML = data['stats']['3']['base_stat'];
-    pokemonHeight.innerHTML = data.height;
-
     let types = data.types.length;
     if (types > 0) {
       pokemonType.innerHTML = data['types']['0']['type']['name'];
@@ -108,6 +102,22 @@ const renderPokemon = async (pokemonSearch) => {
   }
 };
 
+const renderStats = async (pokemonSearch) => {
+  pokemonTypeIconTwo.src = '';
+  nonePokemon();
+
+  const data = await fetchPokemon(pokemonSearch);
+  pokemonTypeIconTwo.src = '';
+
+  if (data) {
+    pokemonHp.innerHTML = data['stats']['0']['base_stat'];
+    pokemonAttack.innerHTML = data['stats']['1']['base_stat'];
+    pokemonDefense.innerHTML = data['stats']['2']['base_stat'];
+    pokemonSpeed.innerHTML = data['stats']['3']['base_stat'];
+    pokemonHeight.innerHTML = data.height;
+  }
+};
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   renderPokemon(input.value.toLowerCase());
@@ -125,4 +135,5 @@ buttonPrev.addEventListener('click', () => {
   }
 });
 
+renderStats(searchPokemon);
 renderPokemon(searchPokemon);

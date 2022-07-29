@@ -1,12 +1,6 @@
 .input__search {
-  width: 100%;
-  padding: 1%;
   outline: none;
   border: 2px solid #333;
   font-weight: 400;
   color: #3a444d;
-}
-.element {
-  grid-row: 2/3;
-  grid-column: 3/4;
 }
