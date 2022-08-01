@@ -6,7 +6,7 @@
   height: 80%;
   border-radius: 20px;
 
-  background-color: #808080;
+  background-image: linear-gradient(to top, #808080, #707070, #606060);
   border: 2px solid #000;
   box-shadow: inset 0 0 0 2px #c5c5c5, inset 0 0 0 4px #000;
 }
