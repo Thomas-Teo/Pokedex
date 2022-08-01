@@ -65,27 +65,40 @@ const renderPokemon = async (pokemonSearch) => {
     pokemonHeight.innerHTML = data.height;
 
     let types = data.types.length;
+    pokemonType.style.display = 'none';
+    pokemonTypeTwo.style.display = 'none';
+    pokemonTypeTwo.innerHTML = '';
+
     if (types > 0) {
       pokemonType.innerHTML = data['types']['0']['type']['name'];
+      pokemonType.style.display = '';
     }
     if (types > 1) {
       pokemonTypeTwo.innerHTML = data['types']['1']['type']['name'];
-    } else {
-      pokemonTypeTwo.innerHTML = '';
+      pokemonTypeTwo.style.display = '';
     }
 
     let abilities = data.abilities.length;
+    pokemonAbilityOne.style.display = 'none';
+    pokemonAbilityTwo.style.display = 'none';
+    pokemonAbilityThree.style.display = 'none';
+    pokemonAbilityFour.style.display = 'none';
+
     if (abilities > 0) {
       pokemonAbilityOne.innerHTML = data['abilities']['0']['ability']['name'];
+      pokemonAbilityOne.style.display = '';
     }
     if (abilities > 1) {
       pokemonAbilityTwo.innerHTML = data['abilities']['1']['ability']['name'];
+      pokemonAbilityTwo.style.display = '';
     }
     if (abilities > 2) {
       pokemonAbilityThree.innerHTML = data['abilities']['2']['ability']['name'];
+      pokemonAbilityThree.style.display = 'none';
     }
     if (abilities > 3) {
       pokemonAbilityFour.innerHTML = data['abilities']['3']['ability']['name'];
+      pokemonAbilityFour.style.display = 'none';
     }
     let moves = data.moves.length;
 
