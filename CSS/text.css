@@ -1,0 +1,39 @@
+.pokemon__status_element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 33%;
+  height: 50%;
+
+  margin-left: 6px;
+}
+
+.pokemon__abilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 33%;
+  height: 50%;
+
+  margin-left: 6px;
+}
+
+.pokemon__status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 33%;
+  height: 100%;
+}
+
+.pokemon__moves {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 33%;
+  height: 100%;
+}
