@@ -39,3 +39,24 @@
   box-shadow: inset -2px 2px 0 #000;
   font-size: 1.3rem;
 }
+
+.options {
+  width: 48%;
+  height: 40%;
+  border-radius: 5%;
+
+  border-color: transparent;
+  background-color: transparent;
+}
+
+button:hover {
+  border-color: #ff0000;
+}
+
+.btn-next:hover {
+  border-color: #000;
+}
+
+.btn-prev:hover {
+  border-color: #000;
+}
