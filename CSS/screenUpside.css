@@ -68,10 +68,18 @@
   box-shadow: 0 0 0 2px #000, 0 0 0 4px #c5c5c5, 0 0 0 6px #000;
 }
 
-.pokemon__image {
+.img__pokemon {
+  display: flex;
   position: absolute;
+  justify-content: center;
+
+  width: 23rem;
+  height: 14rem;
+}
+
+.pokemon__image {
+  position: relative;
   align-self: center;
-  left: 44%;
 
   width: 160px;
   height: 155px;

@@ -1,5 +1,5 @@
 .text {
-  font-size: 27px;
+  font-size: 25px;
 }
 
 .question {
@@ -29,6 +29,7 @@
 
 .pokemon__type_text {
   display: flex;
+  align-items: flex-end;
   justify-content: center;
 
   width: 100%;
@@ -69,7 +70,7 @@
   flex-wrap: wrap;
   align-items: center;
 
-  width: 30%;
+  width: 45%;
   height: 90%;
 
   visibility: hidden;
@@ -78,6 +79,7 @@
 
 .pokemon__status_text {
   display: flex;
+  align-items: flex-end;
   justify-content: center;
 
   width: 100%;
@@ -116,9 +118,10 @@
   position: absolute;
 }
 
-.pokemon__abilities_text {
+.pokemon__ability_text {
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
 
   width: 100%;
   height: 20%;
@@ -185,6 +188,7 @@
 .pokemon__move_text {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: center;
 
   width: 100%;
