@@ -24,7 +24,6 @@
 .content {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
 
   width: 97.5%;
