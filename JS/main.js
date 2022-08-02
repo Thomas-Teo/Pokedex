@@ -94,13 +94,16 @@ const renderPokemon = async (pokemonSearch) => {
     }
     if (abilities > 2) {
       pokemonAbilityThree.innerHTML = data['abilities']['2']['ability']['name'];
-      pokemonAbilityThree.style.display = 'none';
+      pokemonAbilityThree.style.display = '';
     }
     if (abilities > 3) {
       pokemonAbilityFour.innerHTML = data['abilities']['3']['ability']['name'];
-      pokemonAbilityFour.style.display = 'none';
+      pokemonAbilityFour.style.display = '';
     }
     let moves = data.moves.length;
+    pokemonMoveTwo.style.display = 'none';
+    pokemonMoveThree.style.display = 'none';
+    pokemonMoveFour.style.display = 'none';
 
     const random_numbers_0 = Math.floor(0 + Math.random() * (moves * 0.25));
     const random_numbers_1 = Math.floor(moves * 0.25 + Math.random() * (moves * 0.25));
@@ -108,9 +111,18 @@ const renderPokemon = async (pokemonSearch) => {
     const random_numbers_3 = Math.floor(moves * 0.75 + Math.random() * moves * 0.25);
 
     pokemonMoveOne.innerHTML = data['moves'][random_numbers_0]['move']['name'];
-    pokemonMoveTwo.innerHTML = data['moves'][random_numbers_1]['move']['name'];
-    pokemonMoveThree.innerHTML = data['moves'][random_numbers_2]['move']['name'];
-    pokemonMoveFour.innerHTML = data['moves'][random_numbers_3]['move']['name'];
+    if (moves > 1) {
+      pokemonMoveTwo.innerHTML = data['moves'][random_numbers_1]['move']['name'];
+      pokemonMoveTwo.style.display = '';
+    }
+    if (moves > 2) {
+      pokemonMoveThree.innerHTML = data['moves'][random_numbers_2]['move']['name'];
+      pokemonMoveThree.style.display = '';
+    }
+    if (moves > 3) {
+      pokemonMoveFour.innerHTML = data['moves'][random_numbers_3]['move']['name'];
+      pokemonMoveFour.style.display = '';
+    }
 
     renderBackground(pokemonType.innerHTML);
     renderIcon(pokemonType.innerHTML, pokemonTypeTwo.innerHTML);
