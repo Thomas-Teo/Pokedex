@@ -18,7 +18,7 @@ import { nonePokemon } from './nonePokemon.js';
 
 let searchPokemon = 1;
 
-export const fetchPokemon = async (pokemon) => {
+const fetchPokemon = async (pokemon) => {
   const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
 
   if (APIResponse.status === 200) {
@@ -30,8 +30,6 @@ export const fetchPokemon = async (pokemon) => {
 const renderPokemonData = async (pokemonSearch) => {
   pokemonName.innerHTML = 'Loading...';
 
-  //nonePokemon();
-
   const data = await fetchPokemon(pokemonSearch);
 
   if (data) {
@@ -39,7 +37,6 @@ const renderPokemonData = async (pokemonSearch) => {
     pokemonName.innerHTML = data.name;
     pokemonImage.src =
       data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-
     pokemonHeight.innerHTML = data.height;
 
     renderStats(data.stats);
