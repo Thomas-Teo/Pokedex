@@ -21,21 +21,23 @@
       <div class="pokedex__upside">
         <div class="border__screen_upside">
           <div class="pokemon__info">
-            N°<span class="pokemon__number"></span> -
-            <span class="pokemon__name"></span>
+            N°
+            <p class="pokemon__number"></p>
+            -
+            <p class="pokemon__name"></p>
           </div>
 
           <div class="pokemon__icon">
-            <img src="" alt="" class="pokemon__type_icon" />
-            <img src="" alt="" class="pokemon__type_icon_two" />
+            <img src="" alt="pokemon element icon" class="pokemon__type_icon" />
+            <img src="" alt="pokemon element icon" class="pokemon__type_icon_two" />
           </div>
 
           <div class="screen__upside">
             <div class="screen__background">
-              <img src="" alt="" class="pokemon__background" />
+              <img src="" alt="image background" class="pokemon__background" />
             </div>
             <div class="img__pokemon">
-              <img src="" alt="" class="pokemon__image" />
+              <img src="" alt="pokemon image" class="pokemon__image" />
             </div>
           </div>
         </div>
@@ -50,49 +52,49 @@
         <div class="border__pokedex_bottom">
           <div class="pokemon__screen_bottom">
             <div class="content">
-              <span id="text_default" class="question">What do you want to see?</span>
+              <h3 id="text_default" class="question">What do you want to see?</h3>
 
               <div id="switch_type" class="pokemon__status_element">
-                <div class="text pokemon__type_text">Type</div>
-                <div class="type pokemon__type"></div>
-                <div class="type pokemon__type_two"></div>
+                <h1 class="text pokemon__type_text">Type</h1>
+                <h3 class="type pokemon__type"></h3>
+                <h3 class="type pokemon__type_two"></h3>
               </div>
 
               <div id="switch_abilities" class="pokemon__abilities">
-                <span class="text pokemon__ability_text">Ability</span>
+                <h1 class="text pokemon__ability_text">Ability</h1>
                 <div class="text__abilities">
-                  <span class="ability pokemon__ability_one"></span>
-                  <span class="ability pokemon__ability_two"></span>
-                  <span class="ability pokemon__ability_three"></span>
-                  <span class="ability pokemon__ability_four"></span>
+                  <h3 class="ability pokemon__ability_one"></h3>
+                  <h3 class="ability pokemon__ability_two"></h3>
+                  <h3 class="ability pokemon__ability_three"></h3>
+                  <h3 class="ability pokemon__ability_four"></h3>
                 </div>
               </div>
 
               <div id="switch_status" class="pokemon__status">
-                <span class="text pokemon__status_text">Status</span>
+                <h1 class="text pokemon__status_text">Status</h1>
                 <div class="text__status">
-                  <span class="pokemon__hp_text">Hp: </span>
-                  <span class="pokemon__attack_text">Attack: </span>
-                  <span class="pokemon__defense_text">Defense: </span>
-                  <span class="pokemon__speed_text">Speed: </span>
-                  <span class="pokemon__height_text">Height: </span>
+                  <h4 class="pokemon__hp_text">Hp:</h4>
+                  <h4 class="pokemon__attack_text">Attack:</h4>
+                  <h4 class="pokemon__defense_text">Defense:</h4>
+                  <h4 class="pokemon__speed_text">Speed:</h4>
+                  <h4 class="pokemon__height_text">Height:</h4>
                 </div>
                 <div class="value__status">
-                  <span class="pokemon__hp"></span>
-                  <span class="pokemon__attack"></span>
-                  <span class="pokemon__defense"></span>
-                  <span class="pokemon__speed"></span>
-                  <span class="pokemon__height"></span>
+                  <p class="pokemon__hp"></p>
+                  <p class="pokemon__attack"></p>
+                  <p class="pokemon__defense"></p>
+                  <p class="pokemon__speed"></p>
+                  <p class="pokemon__height"></p>
                 </div>
               </div>
 
               <div id="switch_moves" class="pokemon__moves">
-                <span class="text pokemon__move_text">Moves</span>
+                <h1 class="text pokemon__move_text">Moves</h1>
                 <div class="text__moves">
-                  <span class="move pokemon__move_one"></span>
-                  <span class="move pokemon__move_two"></span>
-                  <span class="move pokemon__move_three"></span>
-                  <span class="move pokemon__move_four"></span>
+                  <h4 class="move pokemon__move_one"></h4>
+                  <h4 class="move pokemon__move_two"></h4>
+                  <h4 class="move pokemon__move_three"></h4>
+                  <h4 class="move pokemon__move_four"></h4>
                 </div>
               </div>
             </div>
@@ -132,6 +134,7 @@
           <div class="btn__input">
             <div class="button__prev">
               <button
+                tabindex="0"
                 onclick="switchTxt('text_default', 'switch_type', 'switch_abilities', 'switch_status', 'switch_moves')"
                 class="btn-prev"
               >
@@ -140,11 +143,18 @@
             </div>
             <div class="element">
               <form class="form">
-                <input type="search" class="input__search" placeholder="Name or Number" required />
+                <input
+                  tabindex="0"
+                  type="search"
+                  class="input__search"
+                  placeholder="Name or Number"
+                  required
+                />
               </form>
             </div>
             <div class="button__next">
               <button
+                tabindex="0"
                 onclick="switchTxt('text_default', 'switch_type', 'switch_abilities', 'switch_status', 'switch_moves')"
                 class="btn-next"
               >

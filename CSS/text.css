@@ -54,17 +54,6 @@
   height: 80%;
 }
 
-.pokemon__abilities {
-  display: flex;
-  flex-wrap: wrap;
-
-  width: 100%;
-  height: 100%;
-
-  visibility: hidden;
-  position: absolute;
-}
-
 .pokemon__status {
   display: flex;
   flex-wrap: wrap;
