@@ -11,6 +11,8 @@ import { pokemonAbilityTwo } from './fieldSelector.js';
 import { pokemonAbilityThree } from './fieldSelector.js';
 import { pokemonAbilityFour } from './fieldSelector.js';
 import { pokemonBackground } from './fieldSelector.js';
+import { pokemonType } from './fieldSelector.js';
+import { pokemonTypeTwo } from './fieldSelector.js';
 import { pokemonTypeIcon } from './fieldSelector.js';
 import { pokemonTypeIconTwo } from './fieldSelector.js';
 import { input } from './fieldSelector.js';
@@ -37,7 +39,10 @@ export function nonePokemon() {
     (pokemonNumber.innerHTML = '000'),
     (pokemonImage.src = './images/semPokemon.png'),
     (pokemonBackground.src = `./backgrounds/normal_bg.png`),
+    (pokemonType.innerHTML = ''),
+    (pokemonTypeTwo.innerHTML = ''),
     (pokemonTypeIcon.src = `./icons/sem_icon.png`),
     (pokemonTypeIconTwo.src = ''),
+    (pokemonTypeIconTwo.style.display = 'none'),
     (input.value = '');
 }

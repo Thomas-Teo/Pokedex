@@ -3,38 +3,22 @@ import { pokemonNumber } from './fieldSelector.js';
 import { pokemonName } from './fieldSelector.js';
 import { pokemonImage } from './fieldSelector.js';
 
-import { pokemonType } from './fieldSelector.js';
-import { pokemonTypeTwo } from './fieldSelector.js';
-import { pokemonTypeIconTwo } from './fieldSelector.js';
-
-import { pokemonHp } from './fieldSelector.js';
-import { pokemonAttack } from './fieldSelector.js';
-import { pokemonDefense } from './fieldSelector.js';
-import { pokemonSpeed } from './fieldSelector.js';
-import { pokemonHeight } from './fieldSelector.js';
-
-import { pokemonAbilityOne } from './fieldSelector.js';
-import { pokemonAbilityTwo } from './fieldSelector.js';
-import { pokemonAbilityThree } from './fieldSelector.js';
-import { pokemonAbilityFour } from './fieldSelector.js';
-
-import { pokemonMoveOne } from './fieldSelector.js';
-import { pokemonMoveTwo } from './fieldSelector.js';
-import { pokemonMoveThree } from './fieldSelector.js';
-import { pokemonMoveFour } from './fieldSelector.js';
-
 import { form } from './fieldSelector.js';
 import { input } from './fieldSelector.js';
 import { buttonNext } from './fieldSelector.js';
 import { buttonPrev } from './fieldSelector.js';
+
+import { pokemonHeight } from './fieldSelector.js';
 // Renders
-import { renderIcon } from './renderIcon.js';
-import { renderBackground } from './renderBackground.js';
+import { renderStats } from './renderStats.js';
+import { renderTypes } from './renderTypes.js';
+import { renderAbility } from './renderAbility.js';
+import { renderMoves } from './renderMoves.js';
 import { nonePokemon } from './nonePokemon.js';
 
 let searchPokemon = 1;
 
-const fetchPokemon = async (pokemon) => {
+export const fetchPokemon = async (pokemon) => {
   const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
 
   if (APIResponse.status === 200) {
@@ -43,14 +27,12 @@ const fetchPokemon = async (pokemon) => {
   }
 };
 
-const renderPokemon = async (pokemonSearch) => {
+const renderPokemonData = async (pokemonSearch) => {
   pokemonName.innerHTML = 'Loading...';
-  pokemonTypeIconTwo.src = '';
 
-  nonePokemon();
+  //nonePokemon();
 
   const data = await fetchPokemon(pokemonSearch);
-  pokemonTypeIconTwo.src = '';
 
   if (data) {
     pokemonNumber.innerHTML = data.id;
@@ -58,74 +40,12 @@ const renderPokemon = async (pokemonSearch) => {
     pokemonImage.src =
       data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
 
-    pokemonHp.innerHTML = data['stats']['0']['base_stat'];
-    pokemonAttack.innerHTML = data['stats']['1']['base_stat'];
-    pokemonDefense.innerHTML = data['stats']['2']['base_stat'];
-    pokemonSpeed.innerHTML = data['stats']['3']['base_stat'];
     pokemonHeight.innerHTML = data.height;
 
-    let types = data.types.length;
-    pokemonType.style.display = 'none';
-    pokemonTypeTwo.style.display = 'none';
-    pokemonTypeTwo.innerHTML = '';
-
-    if (types > 0) {
-      pokemonType.innerHTML = data['types']['0']['type']['name'];
-      pokemonType.style.display = '';
-    }
-    if (types > 1) {
-      pokemonTypeTwo.innerHTML = data['types']['1']['type']['name'];
-      pokemonTypeTwo.style.display = '';
-    }
-
-    let abilities = data.abilities.length;
-    pokemonAbilityOne.style.display = 'none';
-    pokemonAbilityTwo.style.display = 'none';
-    pokemonAbilityThree.style.display = 'none';
-    pokemonAbilityFour.style.display = 'none';
-
-    if (abilities > 0) {
-      pokemonAbilityOne.innerHTML = data['abilities']['0']['ability']['name'];
-      pokemonAbilityOne.style.display = '';
-    }
-    if (abilities > 1) {
-      pokemonAbilityTwo.innerHTML = data['abilities']['1']['ability']['name'];
-      pokemonAbilityTwo.style.display = '';
-    }
-    if (abilities > 2) {
-      pokemonAbilityThree.innerHTML = data['abilities']['2']['ability']['name'];
-      pokemonAbilityThree.style.display = '';
-    }
-    if (abilities > 3) {
-      pokemonAbilityFour.innerHTML = data['abilities']['3']['ability']['name'];
-      pokemonAbilityFour.style.display = '';
-    }
-    let moves = data.moves.length;
-    pokemonMoveTwo.style.display = 'none';
-    pokemonMoveThree.style.display = 'none';
-    pokemonMoveFour.style.display = 'none';
-
-    const random_numbers_0 = Math.floor(0 + Math.random() * (moves * 0.25));
-    const random_numbers_1 = Math.floor(moves * 0.25 + Math.random() * (moves * 0.25));
-    const random_numbers_2 = Math.floor(moves * 0.5 + Math.random() * (moves * 0.25));
-    const random_numbers_3 = Math.floor(moves * 0.75 + Math.random() * moves * 0.25);
-
-    pokemonMoveOne.innerHTML = data['moves'][random_numbers_0]['move']['name'];
-    if (moves > 1) {
-      pokemonMoveTwo.innerHTML = data['moves'][random_numbers_1]['move']['name'];
-      pokemonMoveTwo.style.display = '';
-    }
-    if (moves > 2) {
-      pokemonMoveThree.innerHTML = data['moves'][random_numbers_2]['move']['name'];
-      pokemonMoveThree.style.display = '';
-    }
-    if (moves > 3) {
-      pokemonMoveFour.innerHTML = data['moves'][random_numbers_3]['move']['name'];
-      pokemonMoveFour.style.display = '';
-    }
-
-    renderBackground(pokemonType.innerHTML);
-    renderIcon(pokemonType.innerHTML, pokemonTypeTwo.innerHTML);
+    renderStats(data.stats);
+    renderTypes(data.types);
+    renderAbility(data.abilities);
+    renderMoves(data.moves);
     input.value = '';
     searchPokemon = data.id;
   } else {
@@ -135,18 +55,18 @@ const renderPokemon = async (pokemonSearch) => {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  renderPokemon(input.value.toLowerCase());
+  renderPokemonData(input.value.toLowerCase());
 });
 
 buttonNext.addEventListener('click', () => {
   searchPokemon += 1;
-  renderPokemon(searchPokemon);
+  renderPokemonData(searchPokemon);
 });
 
 buttonPrev.addEventListener('click', () => {
   if (searchPokemon > 1) {
     searchPokemon -= 1;
-    renderPokemon(searchPokemon);
+    renderPokemonData(searchPokemon);
   }
 });
-renderPokemon(searchPokemon);
+renderPokemonData(searchPokemon);
