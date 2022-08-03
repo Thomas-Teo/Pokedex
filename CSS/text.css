@@ -1,5 +1,13 @@
+.textTitle {
+  font-size: 18px;
+}
+
+.subTitle {
+  font-size: 16px;
+}
+
 .text {
-  font-size: 25px;
+  font-size: 14px;
 }
 
 .question {
