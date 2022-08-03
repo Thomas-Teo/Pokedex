@@ -27,9 +27,6 @@ main {
 body {
   background: var(--background-page);
   min-height: 100vh;
-}
-
-body {
   font-size: 1.6rem;
 }
 
