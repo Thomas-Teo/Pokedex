@@ -7,10 +7,43 @@
 <p align="center">
    <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
+<div>
+
+<style>
+
+.ckPt {
+  display: none;
+}
+
+.ckEn {
+  display: none;
+}
+
+.divPt div{
+  display: none;
+}
+
+.divEn div{
+  display: none;
+}
+
+#pt:checked + .divPt div{
+    display: block;
+}
+
+#en:checked + .divEn div{
+    display: block;
+}
+</style>
+
+<input type="checkbox" id="pt" class="ckPt" checked>
+<div class="divPt">
+  <label for="pt">Português</label>
+
+  <div>
+  <hr>
 
 ## Tópicos
-
-- [English](#english)
 
 - [Descrição do projeto](#descrição-do-projeto)
 
@@ -26,9 +59,9 @@
 
 ## Descrição do projeto
 
-<p align="justify">
+  <p align="justify">
 
-</p>
+  </p>
 
 ## Funcionalidades
 
@@ -38,7 +71,7 @@
 
 ## Aplicação
 
-<div align="center">
+  <div align="center">
 
   </div>
 
@@ -81,10 +114,92 @@ Se baixou o projeto:
 
 ## Desenvolvedor
 
+  <a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
+  </a>
+  </div>
+</div>
+<hr>
+
+<input type="checkbox" id="en" class="ckEn">
+<div class="divEn">
+<label for="en">English</label>
+
+<div>
+
+## Topic
+
+- [Project description](#project-description)
+
+- [Functionality](#functionality)
+
+- [Aplication](#aplication)
+
+- [Tools used](#Tools-used)
+
+- [Run the project](#run-the-project)
+
+- [Developer](#developer)
+
+## Project description
+
+<p align="justify">
+
+</p>
+
+## Functionality
+
+:heavy_check_mark: `Funcionalidade 1:` Busca Pokemon por Número ou Nome.
+
+:heavy_check_mark: `Funcionalidade 2:` Mostra seu Tipo, Habilidades, Movimentos e Atributos Base.
+
+## Aplication
+
+<div align="center">
+
+  </div>
+
+###
+
+## Tools used
+
+### IDE
+
+<a href="https://code.visualstudio.com" target="_blank"> <img src="./images/git/vscode_logo.png" alt="Visual Studio code"></a>
+
+### Languages
+
+<a href="https://www.w3.org/html/" target="_blank"> <img src="./images/git/html_logo.png" alt="Html"></a>
+<a href="https://www.w3.org/Style/CSS/" target="_blank"> <img src="./images/git/css_logo.png" alt="Css"></a>
+<a href="https://www.javascript.com" target="_blank"> <img src="./images/git/javascript_logo.png" alt="JavaScript"></a>
+
+### API
+
+<a href="https://pokeapi.co" target="_blank"> <img src="./images/git/pokeapi_logo.png" alt="PokéAPI"></a>
+
+## Run the project
+
+Para rodar o projeto pode-se usar `Visual Studio code`.
+
+Se foi feito fork:
+
+- Aperte em `Clone Git Repository...` no seu VS code
+- Faça Login ou Selecione seu git logado
+- Escolha este repositório
+- Baixe LiveServer
+- Então rode o projeto
+
+Se baixou o projeto:
+
+- Escolha `Open Folder...` no seu VS code
+- Então escolha a pasta onde foi baixado o projeto
+- Baixe LiveServer
+- Então rode o projeto
+
+## Developer
+
 <a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
 </a>
-
-<hr>
-
-<h1 align="center" id="english">English</h1>
+</div>
+</div>
