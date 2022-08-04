@@ -1,11 +1,11 @@
 <p align="center">
-   <img src="./images/git/pokeball_logo.png"/>
+<img src="./images/git/pokeball_logo.png"/>
 </p>
 
 <h1 align="center">Pokedex</h1>
 
 <p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
 <div>
 
@@ -27,9 +27,9 @@
 
 ## Descrição do projeto
 
-  <p align="justify">
+<p align="justify">
 
-  </p>
+</p>
 
 ## Funcionalidades
 
@@ -39,9 +39,9 @@
 
 ## Aplicação
 
-  <div align="center">
+<div align="center">
 
-  </div>
+</div>
 
 ###
 
@@ -82,11 +82,21 @@ Se baixou o projeto:
 
 ## Desenvolvedor
 
-  <a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
-  </a>
+<<<<<<< HEAD
+<a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
+</a>
+
 </details>
 
+=======
+<a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
+</a>
+
+</div>
+</div>
+>>>>>>> 08bc78c57bf69445a0d37b8894ce1eb476d3ff0f
 <hr>
 
 <details><summary>English</summary>
@@ -121,7 +131,7 @@ Se baixou o projeto:
 
 <div align="center">
 
-  </div>
+</div>
 
 ###
 
@@ -163,6 +173,6 @@ Se baixou o projeto:
 ## Developer
 
 <a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
+<img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
 </a>
 </details>
