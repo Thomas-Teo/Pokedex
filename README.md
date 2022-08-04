@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="./gitimages/pokeball_logo.png"/>
+   <img src="./images/git/pokeball_logo.png"/>
 </p>
 
 <h1 align="center">Pokedex</h1>
