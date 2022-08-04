@@ -1,4 +1,4 @@
-![Logo Pokedex]()
+![Logo Pokedex](https://github.com/Thomas-Teo/Pokedex/blob/master/icons/pokebola.png)
 
 <h1>Pokedex</h1>
 
