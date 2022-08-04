@@ -48,7 +48,7 @@
 
 ### IDE
 
-<a href="https://code.visualstudio.com" target="_blank"> <img src="./gitimages/vscode_logo.png" alt="Visual Studio code"></a>
+<a href="https://code.visualstudio.com" target="_blank"> <img src="./gitImages/vscode_logo.png" alt="Visual Studio code"></a>
 
 ### Linguagens
 
