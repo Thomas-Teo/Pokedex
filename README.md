@@ -48,17 +48,17 @@
 
 ### IDE
 
-<a href="https://code.visualstudio.com" target="_blank"> <img src="./gitimages/vscode_logo.png" alt="Visual Studio code"></a>
+<a href="https://code.visualstudio.com" target="_blank"> <img src="./images/git/vscode_logo.png" alt="Visual Studio code"></a>
 
 ### Linguagens
 
-<a href="https://www.w3.org/html/" target="_blank"> <img src="./gitImages/html_logo.png" alt="Html"></a>
-<a href="https://www.w3.org/Style/CSS/" target="_blank"> <img src="./gitImages/css_logo.png" alt="Css"></a>
-<a href="https://www.javascript.com" target="_blank"> <img src="./gitImages/javascript_logo.png" alt="JavaScript"></a>
+<a href="https://www.w3.org/html/" target="_blank"> <img src="./images/git/html_logo.png" alt="Html"></a>
+<a href="https://www.w3.org/Style/CSS/" target="_blank"> <img src="./images/git/css_logo.png" alt="Css"></a>
+<a href="https://www.javascript.com" target="_blank"> <img src="./images/git/javascript_logo.png" alt="JavaScript"></a>
 
 ### API
 
-<a href="https://pokeapi.co" target="_blank"> <img src="./gitImages/pokeapi_logo.png" alt="PokéAPI"></a>
+<a href="https://pokeapi.co" target="_blank"> <img src="./images/git/pokeapi_logo.png" alt="PokéAPI"></a>
 
 ## Abrir e rodar o projeto
 
