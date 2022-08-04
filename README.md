@@ -82,21 +82,12 @@ Se baixou o projeto:
 
 ## Desenvolvedor
 
-<<<<<<< HEAD
 <a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
 </a>
 
 </details>
 
-=======
-<a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
-</a>
-
-</div>
-</div>
->>>>>>> 08bc78c57bf69445a0d37b8894ce1eb476d3ff0f
 <hr>
 
 <details><summary>English</summary>
