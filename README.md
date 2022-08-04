@@ -9,39 +9,7 @@
 </p>
 <div>
 
-<style>
-
-.ckPt {
-  display: none;
-}
-
-.ckEn {
-  display: none;
-}
-
-.divPt div{
-  display: none;
-}
-
-.divEn div{
-  display: none;
-}
-
-#pt:checked + .divPt div{
-    display: block;
-}
-
-#en:checked + .divEn div{
-    display: block;
-}
-</style>
-
-<input type="checkbox" id="pt" class="ckPt" checked>
-<div class="divPt">
-  <label for="pt">Português</label>
-
-  <div>
-  <hr>
+<details><summary>Português</summary>
 
 ## Tópicos
 
@@ -117,15 +85,11 @@ Se baixou o projeto:
   <a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
   </a>
-  </div>
-</div>
+</details>
+
 <hr>
 
-<input type="checkbox" id="en" class="ckEn">
-<div class="divEn">
-<label for="en">English</label>
-
-<div>
+<details><summary>English</summary>
 
 ## Topic
 
@@ -201,5 +165,4 @@ Se baixou o projeto:
 <a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
 </a>
-</div>
-</div>
+</details>
