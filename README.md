@@ -9,15 +9,13 @@
 </p>
 <div>
 
-<details><summary>Português</summary>
+<details><summary align="center">Português</summary>
 
 ## Tópicos
 
 - [Descrição do projeto](#descrição-do-projeto)
 
 - [Funcionalidades](#funcionalidades)
-
-- [Aplicação](#aplicação)
 
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 
@@ -36,14 +34,6 @@
 :heavy_check_mark: `Funcionalidade 1:` Busca Pokemon por Número ou Nome.
 
 :heavy_check_mark: `Funcionalidade 2:` Mostra seu Tipo, Habilidades, Movimentos e Atributos Base.
-
-## Aplicação
-
-<div align="center">
-
-</div>
-
-###
 
 ## Ferramentas utilizadas
 
@@ -90,15 +80,13 @@ Se baixou o projeto:
 
 <hr>
 
-<details><summary>English</summary>
+<details><summary align="center">English</summary>
 
 ## Topic
 
 - [Project description](#project-description)
 
 - [Functionality](#functionality)
-
-- [Aplication](#aplication)
 
 - [Tools used](#Tools-used)
 
@@ -117,14 +105,6 @@ Se baixou o projeto:
 :heavy_check_mark: `Funcionalidade 1:` Busca Pokemon por Número ou Nome.
 
 :heavy_check_mark: `Funcionalidade 2:` Mostra seu Tipo, Habilidades, Movimentos e Atributos Base.
-
-## Aplication
-
-<div align="center">
-
-</div>
-
-###
 
 ## Tools used
 
