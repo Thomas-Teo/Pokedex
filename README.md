@@ -1,6 +1,5 @@
-![Logo Pokedex](https://github.com/Thomas-Teo/Pokedex/blob/master/icons/pokebola.png)
-
-<h1>Pokedex</h1>
+![icons8-pokebola-100](https://user-images.githubusercontent.com/84483088/182866915-1b9b6543-8f4b-483a-bfdf-0ea5936cdfff.png)
+<h1 align="center">Pokedex</h1>
 
 <hr>
 
