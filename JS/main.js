@@ -35,8 +35,7 @@ const renderPokemonData = async (pokemonSearch) => {
   if (data) {
     pokemonNumber.innerHTML = data.id;
     pokemonName.innerHTML = data.name;
-    pokemonImage.src =
-      data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+    pokemonImage.src = data['sprites']['other']['official-artwork']['front_default'];
     pokemonHeight.innerHTML = data.height;
 
     renderStats(data.stats);
