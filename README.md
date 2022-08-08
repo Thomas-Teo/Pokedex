@@ -21,9 +21,10 @@
 - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
 
 ## Descrição do projeto
-
+  
 <p align="justify">
-
+Projeto para estudo baseado na <a href="https://pokeapi.co">PokeAPI</a>, Pokedex é uma wikipédia dos <a href="https://www.significados.com.br/pokemon/">Pokémons</a>, ela mostra os elementos de um pokémon, seus atributos iniciais, suas habilidades e seus movimentos.
+Todas essas características são requisitadas da <a href="https://pokeapi.co">PokeAPI</a>, a Pokedex altera seu tamanho para aparecer em telas diferentes, os dados são tratados para serem apresetados de forma dinâmica na tela.
 </p>
 
 ## Funcionalidades
@@ -31,7 +32,7 @@
 :heavy_check_mark: `Funcionalidade 1:` Busca Pokemon por Número ou Nome.
 
 :heavy_check_mark: `Funcionalidade 2:` Mostra seu Tipo, Habilidades, Movimentos e Atributos Base.
-
+  
 ## Ferramentas utilizadas
 
 ### IDE
@@ -86,7 +87,7 @@ Se baixou o projeto:
 ## Project description
 
 <p align="justify">
-
+Project for study based on the PokeAPI, Pokedex is a wikipedia of Pokémons, it shows the elements of a pokémon, its initial attributes, its abilities and its moves. All these features are required from the PokeAPI, the Pokedex changes its size to appear on different screens, the data is treated to be dynamically displayed on the screen.
 </p>
 
 ## Functionality
