@@ -1,8 +1,8 @@
-<p align="center">
-  <img src="./images/git/pokedex_logo.png"/>
-</p>
-
 <h1 align="center">Pokedex</h1>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/84483088/183467562-20190def-3099-4b8e-9dd8-83afaea6b928.png"/>
+</p>
 
 <p align="center">
   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
