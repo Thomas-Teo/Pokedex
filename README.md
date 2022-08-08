@@ -1,13 +1,12 @@
 <p align="center">
-<img src="./images/git/pokedex_logo.png"/>
+  <img src="./images/git/pokedex_logo.png"/>
 </p>
 
 <h1 align="center">Pokedex</h1>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
-<div>
 
 <details><summary align="center">Português</summary>
 
@@ -20,8 +19,6 @@
 - [Ferramentas utilizadas](#ferramentas-utilizadas)
 
 - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
-
-- [Desenvolvedor](#desenvolvedor)
 
 ## Descrição do projeto
 
@@ -70,12 +67,6 @@ Se baixou o projeto:
 - Baixe LiveServer
 - Então rode o projeto
 
-## Desenvolvedor
-
-<a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
-</a>
-
 </details>
 
 <hr>
@@ -88,11 +79,9 @@ Se baixou o projeto:
 
 - [Functionality](#functionality)
 
-- [Tools used](#Tools-used)
+- [Tools used](#tools-used)
 
 - [Run the project](#run-the-project)
-
-- [Developer](#developer)
 
 ## Project description
 
@@ -102,9 +91,9 @@ Se baixou o projeto:
 
 ## Functionality
 
-:heavy_check_mark: `Funcionalidade 1:` Busca Pokemon por Número ou Nome.
+:heavy_check_mark: `Funcionalidade 1:` Search Pokemon by Number or Name.
 
-:heavy_check_mark: `Funcionalidade 2:` Mostra seu Tipo, Habilidades, Movimentos e Atributos Base.
+:heavy_check_mark: `Funcionalidade 2:` Shows your Type, Abilities, Moves, and Base Attributes.
 
 ## Tools used
 
@@ -124,26 +113,21 @@ Se baixou o projeto:
 
 ## Run the project
 
-Para rodar o projeto pode-se usar `Visual Studio code`.
+To run the project you can use `Visual Studio code`.
 
-Se foi feito fork:
+if it was fork:
 
-- Aperte em `Clone Git Repository...` no seu VS code
-- Faça Login ou Selecione seu git logado
-- Escolha este repositório
-- Baixe LiveServer
-- Então rode o projeto
+- Hit `Clone Git Repository...` in your VS code
+- Login or Select your logged in git
+- Choose this repository
+- Download LiveServer
+- Then run the project
 
-Se baixou o projeto:
+If you downloaded the project:
 
-- Escolha `Open Folder...` no seu VS code
-- Então escolha a pasta onde foi baixado o projeto
-- Baixe LiveServer
-- Então rode o projeto
-
-## Developer
-
-<a href="https://github.com/Thomas-Teo/Pokedex/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Thomas-Teo/Pokedex" />
-</a>
+- Choose `Open Folder...` in your VS code
+- Then choose the folder where the project was downloaded
+- Download LiveServer
+- Then run the project
+  
 </details>
