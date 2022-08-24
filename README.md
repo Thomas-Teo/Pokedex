@@ -23,8 +23,11 @@
 ## Descrição do projeto
   
 <p align="justify">
-Projeto para estudo baseado na <a href="https://pokeapi.co">PokeAPI</a>, Pokedex é uma wikipédia dos <a href="https://www.significados.com.br/pokemon/">Pokémons</a>, ela mostra os elementos de um pokémon, seus atributos iniciais, suas habilidades e seus movimentos.
-Todas essas características são requisitadas da <a href="https://pokeapi.co">PokeAPI</a>, a Pokedex altera seu tamanho para aparecer em telas diferentes, os dados são tratados para serem apresetados de forma dinâmica na tela.
+Este é um projeto desenvolvido para estudo baseado na <a href="https://pokeapi.co">PokeAPI</a>.
+A Pokedex é uma wikipédia dos <a href="https://www.significados.com.br/pokemon/">Pokémons</a>, que são animais de um desenho animado da TV.
+Ela mostra os elementos de um pokémon, seus atributos iniciais, suas habilidades e seus movimentos.
+Todas essas características dos pokémons são requisitadas da <a href="https://pokeapi.co">PokeAPI</a>, então a pokedex trata os dados que seram apresetados de forma dinâmica na tela.
+Também fiz com que a pokedex alterasse seu tamanho dependendo da tela do usuário.
 </p>
 
 ## Funcionalidades
@@ -87,7 +90,11 @@ Se baixou o projeto:
 ## Project description
 
 <p align="justify">
-Project for study based on the PokeAPI, Pokedex is a wikipedia of Pokémons, it shows the elements of a pokémon, its initial attributes, its abilities and its moves. All these features are required from the PokeAPI, the Pokedex changes its size to appear on different screens, the data is treated to be dynamically displayed on the screen.
+This is a project developed for study based on the PokeAPI.
+Pokedex is a wikipedia of Pokémon, which are animals from a TV cartoon.
+It shows the elements of a pokemon, its starting attributes, its abilities and its moves.
+All these pokemon characteristics are requested from the PokeAPI, so the pokedex handles the data that will be dynamically displayed on the screen.
+I also made the pokedex change its size depending on the user's screen.
 </p>
 
 ## Functionality
