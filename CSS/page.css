@@ -15,6 +15,15 @@
 html {
   font-size: 62.5%;
   overflow: hidden;
+  cursor: url('../icons/pokebolaMouse24.png'), auto;
+}
+
+html.click,
+html.click a,
+html.click a:hover,
+a:hover,
+button:hover {
+  cursor: url('../icons/pokebolaAbertaMouse24.png'), auto;
 }
 
 main {
@@ -154,10 +163,14 @@ p {
 
 .pokemon__type_icon {
   width: 35%;
+  border: 2px solid #000;
+  border-radius: 50%;
 }
 
 .pokemon__type_icon_two {
   width: 35%;
+  border: 2px solid #000;
+  border-radius: 50%;
 }
 
 .screen__upside {
