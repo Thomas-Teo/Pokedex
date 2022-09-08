@@ -1,0 +1,20 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Pokedex</h1>",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-Teo/Pokedex.git"
+  },
+  "keywords": [],
+  "author": "Thomas Enderson de Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thomas-Teo/Pokedex/issues"
+  },
+  "homepage": "https://github.com/Thomas-Teo/Pokedex#readme"
+}
